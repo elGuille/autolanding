@@ -2,7 +2,9 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
+    <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">        
+        <meta name="viewport" content="width=device-width, initial-scale=1">   
     <title>Yoa - Your Own Adventure</title>
 
     <link rel="icon" href="images/Yoa_logo_blackwhite.png" type="image/x-icon">
@@ -14,8 +16,7 @@
     <link rel="stylesheet" href="css/fx.css" />
     <link rel="stylesheet" href="css/custom.css" />
     <link rel="stylesheet" href="css/index.css" />
-    <link rel="stylesheet" href="css/preloader.css" />
-
+    <link rel="stylesheet" href="css/preloader.css">
 </head>
 
 <body class="light-page">
@@ -91,12 +92,10 @@
                 <div class="row">
                     <div class="bg-box col-md-6 padding-x3 mb-50 mb-md-0" style="background-image: ; background-position: left top; background-size: cover;">
                         <div class="content-box d-inline-block">
-                            <video width="400" loop autoplay muted controls id="vid">
+                            <video class="b-lazy" width="400" loop muted controls autoplay>
                                 <source src="01.mp4" type="video/mp4">
                             </video>
-                            <script>
-    document.getElementById('vid').play();
-</script>
+                           
                         </div>
                     </div>
                     <div class="col-md-4 offset-md-7" style="">
@@ -136,12 +135,9 @@
                     </div>
                     <div class="col-md-6 ml-auto text-center">
                         <div class="content-box d-inline-block">
-                            <video width="400" loop autoplay muted controls id="vid">
+                            <video class="b-lazy" width="400" loop muted controls id="vid" poster="images/thumb-2.jpg" preload="none">
                                 <source src="02.mp4" type="video/mp4">
                             </video>
-                            <script>
-    document.getElementById('vid').play();
-</script>
                         </div>
                     </div>
                 </div>
@@ -244,12 +240,9 @@
                     </div>
                     <div class="col-lg-4 order-lg-2">
                         <div class="content-box d-inline-block">
-                            <video width="100%" loop autoplay muted controls id="vid">
+                            <video class="b-lazy" width="100%" loop muted controls id="vid" poster="images/thumb-3.jpg" preload="none">
                                 <source src="03.mp4" type="video/mp4">
                             </video>
-                            <script>
-                                document.getElementById('vid').play();
-</script>
                         </div>
                     </div>
                 </div>
